@@ -14,7 +14,7 @@
 
   <scm>
     <connection>scm:git:https://github.com/hayk-20-a/spring-petclinic.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com:hayk-20-a/spring-petclinic.git</developerConnection>
+    <developerConnection>scm:git:ssh://git@github.com/hayk-20-a/spring-petclinic.git</developerConnection>
     <url>https://github.com/hayk-20-a/spring-petclinic</url>
     <tag>HEAD</tag>
   </scm>
