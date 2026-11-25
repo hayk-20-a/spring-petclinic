@@ -12,6 +12,13 @@
   <artifactId>spring-petclinic</artifactId>
   <version>4.0.0-SNAPSHOT</version>
 
+  <scm>
+    <connection>scm:git:https://github.com/hayk-20-a/spring-petclinic.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com:hayk-20-a/spring-petclinic.git</developerConnection>
+    <url>https://github.com/hayk-20-a/spring-petclinic</url>
+    <tag>HEAD</tag>
+  </scm>
+
   <name>petclinic</name>
 
   <properties>
@@ -310,6 +317,18 @@
         <groupId>org.cyclonedx</groupId>
         <artifactId>cyclonedx-maven-plugin</artifactId>
       </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>3.3.1</version>
+          <configuration>
+            <autoVersionSubmodules>true</autoVersionSubmodules>
+            <tagNameFormat>v@{project.version}</tagNameFormat>
+            <pushChanges>true</pushChanges>
+          </configuration>
+      </plugin>
+
     </plugins>
   </build>
   <licenses>
